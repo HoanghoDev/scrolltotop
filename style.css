@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+.tab{
+    height: 100vh;
+    background-color: aqua;
+    font-size: 100px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab:nth-child(even){
+    background-color: blueviolet;
+}
+#toTop{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url(img/totop.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 0 #c9c90a;
+    transition: transform 0.3s, box-shadow 0.3s ;
+}
+#toTop:active{
+    transform: translateY(10px);
+    box-shadow: none;
+}
